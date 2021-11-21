@@ -39,7 +39,7 @@ These instructions will assume that you are starting a new pod session; if this 
 
 **SAFETY FIRST** - do not attempt this process in an environment where you cannot recover from an error (extra pods, insulin, and phone devices are must-haves).
 
-**Your Omnipod Dash PDM will no longer work after the AAPS Dash driver activates your pod.** Previously you used your Omnipod Dash PDM to send commands to your Omnipod Dash pod. An Omnipod Dash pod only allows a single device to send communication to communicate with it. The device that successfully activates the pod is the only device allowed to communicate with it from that point forward. This means that once you activate an Omnipod Dash pod with your Android phone through the AAPS Dash driver, **you will no longer be able to use your PDM with your pod**. The AAPS Dash driver in your Android phone is now your acting PDM.
+**Your Omnipod Dash PDM will no longer work after the AAPS Dash driver activates your pod.** Previously you used your Omnipod Dash PDM to send commands to your Omnipod Dash pod. An Omnipod Dash pod only allows a single device to communicate with it. The device that successfully activates the pod is the only device allowed to communicate with it from that point forward. This means that once you activate an Omnipod Dash pod with your Android phone through the AAPS Dash driver, **you will no longer be able to use your PDM with your pod**. The AAPS Dash driver in your Android phone is now your acting PDM.
 
 *This does NOT mean you should throw away your PDM, it is recommended to keep it around as a backup and for emergencies, for instance when your phone gets lost or AAPS is not working correctly.*
 
@@ -152,12 +152,12 @@ Ensure the new pod and the phone running AAPS are within close proximity of each
 
 |Activate_Pod_14||Activate_Pod_15|
 
-It is good practice to export settings AFTER deactivating the old pod and BEFORE activating the new pod. Do this at each pod change and once a month, copy the exported file to your internet drive. see [**Export settings Doc**](https://androidaps.readthedocs.io/en/latest/Usage/ExportImportSettings.html?highlight=exporting#export-import-settings).
+It is good practice to export settings AFTER deactivating the old pod and BEFORE activating the new pod, at each pod change. Once a month, make sure to copy the exported file to a safe place (i.e. not on your phone). see [**Export settings Doc**](https://androidaps.readthedocs.io/en/latest/Usage/ExportImportSettings.html?highlight=exporting#export-import-settings).
 
 
 ## Deactivate Pod
 
-Under normal circumstances, the expected lifetime of a pod is three days (72 hours) and an additional 8 hours after the pod expiration warning for a total of 80 hours of pod usage.
+Under normal circumstances the expected lifetime of a pod is three days (72 hours) and an additional 8 hours after the pod expiration warning for a total of 80 hours of pod usage.
 
 To deactivate a pod (either from expiration or from a pod failure):
 
@@ -420,7 +420,6 @@ Note: In some cases you may need to use the export to restore AndroisAPS setting
 - Think about if you need to export with an active pod session.
 - Regularly export your settings and store a copy in a safe place.
 
-
 ## Import Settings
 
 Please note that importing settings has the possibility to import an outdated Pod status. As a result, the outdated will result in losing the active Pod! (see **Exporting Settings**)
@@ -443,7 +442,6 @@ Importing settings while on an active Pod session may result in Pod failure or l
 3. Check all preferences
 
 ## Importing settings that contain Pod state from an inactive Pod
-
 
 When importing settings that contain the session state for a Pod that is no longer active it will show up on the DASH tab. AndroidAPS will try to connect which is obviously failing. In this state you can not activate a new Pod.
 
@@ -477,23 +475,23 @@ In most cases there is no need to uninstall. You can do an “in-place” instal
 
 Please note that the Omnipod Dash driver presents a variety of unique alerts on the **Overview tab**, most of them are informational and can be dismissed while some provide the user with an action to take to resolve the cause of the triggered alert. A summary of the main alerts that you may encounter is listed below:
 
-### No active Pod
+#### No active Pod
 
 No active Pod session detected. This alert can temporarily be dismissed by pressing **SNOOZE** but it will keep triggering as long as a new pod has not been activated. Once activated this alert is automatically silenced.
 
-### Pod suspended
+#### Pod suspended
 
 Informational alert that Pod has been suspended.
 
-### Setting basal profile failed. Delivery might be suspended! Please manually refresh the Pod status from the Omnipod tab and resume delivery if needed..
+#### Setting basal profile failed. Delivery might be suspended! Please manually refresh the Pod status from the Omnipod tab and resume delivery if needed..
 
 Informational alert that the Pod basal profile setting has failed, and you will need to hit *Refresh* on the Omnipod tab.
 
-### Unable to verify whether SMB bolus succeeded. If you are sure that the Bolus didn't succeed, you should manually delete the SMB entry from Treatments.
+#### Unable to verify whether SMB bolus succeeded. If you are sure that the Bolus didn't succeed, you should manually delete the SMB entry from Treatments.
 
 Alert that the SMB bolus success could not be verified, you will need to verify the *Last bolus* field on the DASH tab to see if SMB bolus succeeded and if not remove the entry from the Treatments tab.
 
-### Uncertain if "task bolus/TBR/SMB" completed, please manually verify if it was successful.
+#### Uncertain if "task bolus/TBR/SMB" completed, please manually verify if it was successful.
 
 # Where to get help for Omnipod DASH driver
 
