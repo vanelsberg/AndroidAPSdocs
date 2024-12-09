@@ -59,25 +59,25 @@ In case your main **AAPS** phone is lost or damaged, having a copy of the APK av
 
 3. Using the file explorer on your phone (commonly called “Files” or “My Files”) navigate to Internal Storage > AAPS > preferences. Here you will see a copy of all exported preferences files. The file name should be `YYYY-MM-DD_Time_appname.json`. Upload this file to the cloud platform of your choice. Then from the cloud platform, also download a copy to your local computer.
 
-## Exporting Settings to File ##
+## Exporting Preference Settings to File ##
 Exporting the AndroidAPS settings to file enables you to restore its configuration to a specific point in time. In addition to all settings, the export
 file also contains the status of your objectives, which you need to restore on reinstalling AndroidAPS. Without this you will be required to redo all
 objectives from start to enable closed loop. Settings files also enable you to restore "last known good" settings for undoing any configuration
 changes. 
 
-It is recommended to do regular settings exports, especially **before an after** making configuration changes. You can choose to **do exports
-manually or (preferred) through automation**. Also, make sure to make a note of your AndroidAPS master password and to backup your settings
+It is recommended to do regular settings exports, especially **before an after making configuration changes**. You can choose to do exports
+**manually or (preferred) through automation**. Also, make sure to make a note of your AndroidAPS master password and to backup your settings
 files by copying them off your phone to for instance a cloud storage location.
 
-**Note: The exported settings will be encrypted with your AndroidAPS master password: without the master password used for exporting
-you will be unable to import the settings file!** 
+**Note**: _The exported settings will be encrypted with your AndroidAPS master password: without the master password used for exporting
+you will be unable to import the settings file!_
 
-### Exporting or importing settings: ###
+### Exporting or Importing Settings: ###
 To export or import settings, use the **import or export buttons** in the AndroidAPS **maintenance menu**
 
 ![Maintenance menu export/import buttons](../images/Maintenance/maintenance_menu_import_export_400px.png)
 
-### Automating settings export: ###
+### Automating Settings Export: ###
 To enable automating settings exports [(**see Automation**)](../DailyLifeWithAaps/Automations.md) enable the option "**Unattended Settings Exports**"
 in the maintenance menu preferences.
 

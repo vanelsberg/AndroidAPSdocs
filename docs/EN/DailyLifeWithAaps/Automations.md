@@ -21,6 +21,8 @@ There are a wide range of Automation options, and users are encouraged to study 
 
 ## How Automation can help
 
+1. **Automate reoccurring tasks:** Automatically executing programmed actions without user interaction.
+
 1. **Decreasing decision fatigue:** The primary benefit of **Automations** is to relieve the user from the burden of having to make manual interventions in **AAPS**. [Research](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6286423/#ref4) estimates that an average of 180 additional daily decisions have to be made by those living with Type 1 diabetes. **Automations** can lessen the mental load, freeing up the user’s mental energy for other aspects of life.
 
 1. **Potentially improving glycemic control:** for example, **Automations** can help ensure **Temp Targets** are always set when needed, even during busy schedules or periods of forgetfulness. For example, if a child with diabetes has sports scheduled at school on Tuesdays at 10am and Thursdays at 2pm and requires a high Temp Target ('TT') actioned 30 minutes before the sports activity, the **Temp Target** can be enabled by way of an **Automation**. 
@@ -221,7 +223,7 @@ To delete an **Automation** rule click on the trash icon.
 
 ![Alt text](../images/automation_2024-02-12_20-58-26.png-500x.png)
 
-## Examples of Automations
+# Examples of Automations
 
 Below are examples of **Automations**. Further discussion on **Automations** and how users have individualised their  **Automation** can be found in Facebook discussions groups or on Discord. The examples below should not be replicated without the user having a good understanding of how the **Automation** will work.
 
@@ -270,6 +272,27 @@ Here is the screenshot detailing the **Automation** triggers:
 1) WIFI SSID = My_Home_WiFi_Name
 
 ![Alt text](../images/automation_2024-02-12_21-05-16.png-500x.png)
+
+### Unattended Exports of Preference Settings
+
+## Unattended Exports: scheduled (daily)
+
+Screenshots detailing the Automation triggers:
+
+1) Condition: Recurring time = M,T,W,T,F At 8:00am
+1) Action: Settings Export (For "Text in treatments" enter "Daily")
+
+![Scheduled exports](../images/Automations/automation_settingsexport_scheduled_400px.png)
+
+## Unattended Exports: Pod Activation (patch pump only)
+
+Screenshots detailing the Automation triggers:
+
+1) Condition: Pod Activation
+1) Action: Settings Export (For "Text in treatments" enter "Pod Activation: settings export")
+
+![Export on Pod activation](../images/Automations/automation_settingsexport_podactivation_400px.png)
+
 
 ## Automation Logs
 
