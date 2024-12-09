@@ -78,7 +78,7 @@ To export or import settings, use the **import or export buttons** in the Androi
 ![Maintenance menu export/import buttons](../images/Maintenance/maintenance_menu_import_export_400px.png)
 
 ### Automating settings export: ###
-To enable automating settings exports [(see Automation)](../DailyLifeWithAaps/Automation.md) enable the option "Unattended Settings Exports"
+To enable automating settings exports [(see Automation)](../DailyLifeWithAaps/Automations.md) enable the option "Unattended Settings Exports"
 in the maintenance menu preferences.
 
 ![Maintenance menu unattended Settings Export](../images/Maintenance/maintenance_menu_preferences_400px.png)
