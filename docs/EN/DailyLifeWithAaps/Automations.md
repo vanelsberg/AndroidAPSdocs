@@ -2,11 +2,22 @@
 
 ## What is an Automation?
 
-"**Automation**" is a feature within **AAPS** which can simplify a user’s diabetes management by making automatic changes to insulin delivery in order to fit within the individual's lifestyle needs. 
+"**Automation**" is a feature which can automate task for AndroidAPS.
 
-An **Automation** instructs **AAPS** to carry out a specific action 'automatically' as a result of one or more conditions or triggers. This can be for irregular episodic events, like low or high **BG**, a set amount of negative **IOB**. It can also be for reoccurring events, for example a meal or exercise at a certain time of day, or when the user is located within a certain distance of GPS location or WIFI SSID area. 
+Automations performs specific actions based on one or more conditions or triggers. Triggers can include irregular events like low or high blood glucose (BG) levels, or a set amount of negative insulin on board (IOB). Automations can also handle recurring events, such as meals or exercise at certain times of day, or when the user is within a specific distance of a GPS location or a WIFI SSID area. Automation can execute AAPS settings backups based on a schedule or on every Pod change.
 
-There are a wide range of **Automation** options, and users are encouraged to study these within the **AAPS** app, in the **Automation** section. You can also search the **AAPS** user groups on **Facebook** and **Discord** for **Automation** examples from other users. 
+Automations rules are created and modified from the Automations tab. Each rule is defined by two properties:
+
+- One or more conditions or 'triggers' that start an action.
+
+    Think of a certain time schedule, an event or propertie value in AAPS
+
+- One or more actions to perform.
+
+    Such as an alarm or settings a profile percentage or exporting the AAPS settings on Pod change.
+
+
+There are a wide range of Automation options, and users are encouraged to study these within the AAPS app, in the Automation section. You can also search the AAPS user groups on **Facebook** and **Discord** for Automation examples from other users. 
 
 ## How Automation can help
 
@@ -28,7 +39,7 @@ The user has set an **Automation** to trigger a 5am ‘Temp Target-Activity’ t
 
 ## Key considerations before starting with Automations
 
-1. Before setting up an **Automation**, you should have reasonable **BG** control with **AAPS**. **Automations** should not be used to compensate for sub-optimal basal, **ISF** or **CR** settings (discussed further below). Avoid setting an automated **Profile switch** to compensate for **BG** rises due to _e.g._ food, these are better dealt with via other strategies (SMBs etc). 
+1. Before setting up certain Automations, you should have reasonable **BG** control with **AAPS**. Automations should not be used to compensate for sub-optimal basal, **ISF** or **CR** settings (discussed further below). Avoid setting an automated **Profile switch** to compensate for **BG** rises due to _e.g._ food, these are better dealt with via other strategies (SMBs etc). 
 
 1. As with any technology, **CGMs**, **Pumps** and phones can malfunction: Technical issues or sensor errors can disrupt the **Automation** actions, and manual intervention may be needed. 
 
@@ -158,6 +169,7 @@ Several conditions can be linked with
 * Insulin age trigger: Available for supported pumps
 * Battery age trigger: Available for supported pumps
 * Sensor age trigger: always available
+* Pod Activation trigger: Available for patch pumps
 
 Note that for all age related triggers the equal comparison is unlikely to trigger, so in that case two triggers are required to create a range
 

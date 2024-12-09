@@ -69,7 +69,7 @@ It is recommended to do regular settings exports, especially **before an after**
 manually or (preferred) through automation**. Also, make sure to make a note of your AndroidAPS master password and to backup your settings
 files by copying them off your phone to for instance a cloud storage location.
 
-**Note that exported settings will be encrypted with your AndroidAPS master password: without the master password used for exporting
+**Note: The exported settings will be encrypted with your AndroidAPS master password: without the master password used for exporting
 you will be unable to import the settings file!** 
 
 ### Exporting or importing settings: ###
@@ -78,8 +78,18 @@ To export or import settings, use the **import or export buttons** in the Androi
 ![Maintenance menu export/import buttons](../images/Maintenance/maintenance_menu_import_export_400px.png)
 
 ### Automating settings export: ###
-To enable automating settings exports [(see Automation)](../DailyLifeWithAaps/Automations.md) enable the option "Unattended Settings Exports"
+To enable automating settings exports [(**see Automation**)](../DailyLifeWithAaps/Automations.md) enable the option "**Unattended Settings Exports**"
 in the maintenance menu preferences.
+
+By enabling this feature you allow AndroidAPS to execute settings exports without user intervention. For this the master password
+is securely stored on your phone (only) at the next manually export. The stored stored the password will be used for up to 4 weeks.
+After 4 weeks you will be notified the password is about to expire. During a grace period of 1 week, the password needs to be reactivated by
+manually exporting settings from the maintenance menu to prevent expiry.
+
+After the grace period of 1 week has passed the stored password expires and any automated settings export will abort while notifying the user, asking
+to reenter the password. Automated exports will be logged to the AndroidAPS Careportal and User entry lists under Treatments.
+
+_**Note:** On importing settings to user always needs to enter the AndroidAPS password!_
 
 ![Maintenance menu unattended Settings Export](../images/Maintenance/maintenance_menu_preferences_400px.png)
 
