@@ -73,13 +73,15 @@ files by copying them off your phone to for instance a cloud storage location.
 you will be unable to import the settings file!** 
 
 ### Exporting or importing settings: ###
-To export or import settings, use the **import or export buttons** in the AndroidAPS **maintenance menu**   
+To export or import settings, use the **import or export buttons** in the AndroidAPS **maintenance menu**
+
 ![Maintenance menu export/import buttons](../images/Maintenance/maintenance_menu_import_export_400px.png)
 
 ### Automating settings export: ###
-To enable automating settings exports [(see Automation)](../DailyLifeWithAaps/Automations.html#automation) enable the option "Unattended Settings Exports"
+To enable automating settings exports [(see Automation)](../Usage/Automation.md) enable the option "Unattended Settings Exports"
 in the maintenance menu preferences.
-![Maintenance menu, settings, unattended Settings Export](../images/Maintenance/maintenance_menu_preferences_400px.png)
+
+![Maintenance menu unattended Settings Export](../images/Maintenance/maintenance_menu_preferences_400px.png)
 
 (ExportImportSettings-restoring-from-your-backups-on-a-new-phone-or-fresh-installation-of-aaps)=
 ## Restoring from your backups on a new phone or fresh installation of AAPS
