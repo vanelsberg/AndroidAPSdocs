@@ -273,9 +273,9 @@ Here is the screenshot detailing the **Automation** triggers:
 
 ![Alt text](../images/automation_2024-02-12_21-05-16.png-500x.png)
 
-### Unattended Exports of Preference Settings
+# Automating Preference Settings Export
 
-## Unattended Exports: scheduled (daily)
+### Unattended Exports: scheduled (daily)
 
 Screenshots detailing the Automation triggers:
 
@@ -284,7 +284,9 @@ Screenshots detailing the Automation triggers:
 
 ![Scheduled exports](../images/Automations/automation_settingsexport_scheduled_400px.png)
 
-## Unattended Exports: Pod Activation (patch pump only)
+Note: Export execution will be logged on Careportal
+
+### Unattended Exports: Pod Activation (patch pump only)
 
 Screenshots detailing the Automation triggers:
 
@@ -293,8 +295,10 @@ Screenshots detailing the Automation triggers:
 
 ![Export on Pod activation](../images/Automations/automation_settingsexport_podactivation_400px.png)
 
+Note: Export execution will be logged on Careportal
 
-## Automation Logs
+
+# Automation Logs
 
 **AAPS** has a log of the most recent **Automation** triggered at the bottom of the screen under the **Automation** tab. 
 
